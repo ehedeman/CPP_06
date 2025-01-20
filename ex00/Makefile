@@ -6,7 +6,7 @@
 #    By: ehedeman <ehedeman@student.42wolfsburg.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/01/17 14:18:05 by ehedeman          #+#    #+#              #
-#    Updated: 2025/01/17 14:18:37 by ehedeman         ###   ########.fr        #
+#    Updated: 2025/01/20 13:15:12 by ehedeman         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,15 +22,16 @@
 #                                                                              #
 # **************************************************************************** #
 
-NAME = bureaucrat
+NAME = ScalarTypes
 
-SRC =	
+SRC =	ScalarConverter.cpp		\
+		main.cpp
 
 OBJS_DIR = objs/
 OBJS = $(SRC:.cpp=.o)
 OBJS_PREFIXED = $(addprefix $(OBJS_DIR), $(OBJS))
 
-INCLUDES =	
+INCLUDES =	ScalarConverter.hpp
 
 CXX = c++
 
