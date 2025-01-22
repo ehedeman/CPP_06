@@ -6,11 +6,11 @@
 /*   By: ehedeman <ehedeman@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/17 15:37:38 by ehedeman          #+#    #+#             */
-/*   Updated: 2025/01/21 15:19:55 by ehedeman         ###   ########.fr       */
+/*   Updated: 2025/01/21 15:42:09 by ehedeman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
+#pragma once
 #include <string>
 #include <stdio.h>
 #include <stdlib.h>
@@ -19,21 +19,10 @@
 #include <float.h>
 #include <sstream>
 #include <limits>
+#include "Types.hpp"
 
 #define DISPLAYABLE_MAX 126
 #define DISPLAYABLE_MIN 33
-
-typedef struct s_types
-{
-	std::string	str;
-	int			length;
-	int			i;
-	float		f;
-	double		d;
-	std::string	char_err;
-	bool		decimal;
-	bool		f_decimal;
-}				t_types;
 
 
 class ScalarConverter

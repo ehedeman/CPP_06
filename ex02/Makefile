@@ -6,20 +6,20 @@
 #    By: ehedeman <ehedeman@student.42wolfsburg.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/01/14 14:53:54 by ehedeman          #+#    #+#              #
-#    Updated: 2025/01/21 15:54:45 by ehedeman         ###   ########.fr        #
+#    Updated: 2025/01/21 16:08:52 by ehedeman         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = ScalarTypes
+NAME = Base
 
-SRC =	ScalarConverter.cpp		\
+SRC =	Base.cpp		\
 		main.cpp
 
 OBJS_DIR = objs/
 OBJS = $(SRC:.cpp=.o)
 OBJS_PREFIXED = $(addprefix $(OBJS_DIR), $(OBJS))
 
-INCLUDES =	ScalarConverter.hpp Types.hpp
+INCLUDES =	Base.hpp
 
 CXX = c++
 

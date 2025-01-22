@@ -6,7 +6,7 @@
 /*   By: ehedeman <ehedeman@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/20 13:00:40 by ehedeman          #+#    #+#             */
-/*   Updated: 2025/01/21 15:19:11 by ehedeman         ###   ########.fr       */
+/*   Updated: 2025/01/21 15:31:18 by ehedeman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,12 @@ int main(int argc, char **argv)
 	ScalarConverter::convert(str);
 	std::cout << std::endl;
 	str = "247947927.29342347f";
+	ScalarConverter::convert(str);
+	std::cout << std::endl;
+	str = "42.0f";
+	ScalarConverter::convert(str);
+	std::cout << std::endl;
+	str = "0";
 	ScalarConverter::convert(str);
 	std::cout << std::endl;
 	str = "13";
